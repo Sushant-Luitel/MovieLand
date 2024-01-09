@@ -8,7 +8,7 @@ function App() {
   const [keyword, setKeyword] = useState("");
   const fetchMovie = async () => {
     const response = await fetch(
-      "http://www.omdbapi.com/?apikey=97fc7fab&s=marvel"
+      "https://www.omdbapi.com/?apikey=97fc7fab&s=marvel"
     );
     const result = await response.json();
     console.log(result.Search);
